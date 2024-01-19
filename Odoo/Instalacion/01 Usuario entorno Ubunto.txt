@@ -1,0 +1,38 @@
+Enter new UNIX username:
+usuario: chuamani
+password:BANKpower9719
+
+
+/*
+Crear carpeta curso y ejecutar CODE . desde la  carpeta CURSO
+*/
+
+/home/chuamani/.hushlogin file.
+chuamani@dcode:~$ cd /mnt/c
+chuamani@dcode:/mnt/c$ mkdir curso
+chuamani@dcode:/mnt/c$ code .
+Installing VS Code Server for x64 (1a5daa3a0231a0fbba4f14db7ec463cf99d7768e)
+Downloading: 100%
+Unpacking: 100%
+Unpacked 1522 files and folders to /home/chuamani/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.
+chuamani@dcode:/mnt/c$ cd curso
+chuamani@dcode:/mnt/c/curso$ code .
+chuamani@dcode:/mnt/c/curso$
+
+
+
+
+
+
+
+
+Errores 01:
+Installing, this may take a few minutes... WslRegisterDistribution failed with error: 0x80070422 Error: 0x80070422 No se puede iniciar el servicio, porque estß deshabilitado o porque no tiene dispositivos habilitados asociados a Úl.
+
+Solucion:
+Presionas win + r;
+Escribes “cmd”
+Das el comando: sc config LxssManager start=auto
+
+Para Habiliatar wsl: 
+wsl --set-default-version 2
